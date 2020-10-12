@@ -67,6 +67,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(256, 20);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // btnLogin
             // 
@@ -77,7 +78,6 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-
             // 
             // lblError
             // 
@@ -89,7 +89,6 @@
             this.lblError.TabIndex = 5;
             this.lblError.Text = "label1";
             this.lblError.Visible = false;
-
             // 
             // Form1
             // 
