@@ -16,5 +16,13 @@ namespace Week3_practical_tasks
         {
             InitializeComponent();
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string s_Username = "";
+            string s_Password = "";
+
+            s_Username = Console.ReadLine.te
+        }
     }
 }
