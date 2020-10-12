@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Week3_practical_tasks.Classes;
 
 namespace Week3_practical_tasks
 {
@@ -15,6 +16,30 @@ namespace Week3_practical_tasks
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string s_Username = "";
+            string s_Password = "";
+
+            s_Username = txtUsername.Text;
+            s_Password = txtPassword.Text;
+
+            if (s_Username == cls_user.GetUsername() && s_Password == cls_user.GetPassword())
+            {
+                cls_user.SetUsername(s_Username);
+
+                this.Hide();
+                frm_menu Form = new frm_menu();
+                Form.Show();
+            }
+            else
+            {
+                lblError.Text = "Error Incorrect Details!";
+                lblError.Visible = true;
+                lblError.ForeColor = Color.Red;
+            }
         }
     }
 }
