@@ -26,9 +26,9 @@ namespace Week3_practical_tasks
             s_Username = txtUsername.Text;
             s_Password = txtPassword.Text;
 
-            if (s_Username == cls_user.GetUsername() && s_Password == cls_user.GetPassword())
+            if (s_Username == cls_user.Username && s_Password == cls_user.Password)
             {
-                cls_user.SetUsername(s_Username);
+                cls_user.Username = s_Username;
 
                 this.Hide();
                 frm_menu Form = new frm_menu();
