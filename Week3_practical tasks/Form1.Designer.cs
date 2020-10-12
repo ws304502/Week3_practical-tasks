@@ -77,6 +77,7 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
+
             // 
             // lblError
             // 
@@ -88,6 +89,7 @@
             this.lblError.TabIndex = 5;
             this.lblError.Text = "label1";
             this.lblError.Visible = false;
+
             // 
             // Form1
             // 
