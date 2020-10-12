@@ -12,34 +12,52 @@ namespace Week3_practical_tasks.Classes
         private double m_dSterling = 1;
         private double m_dDollar = 0.72;
 
-        public double GetSterling()
+        public double Euro 
         {
-            return m_dSterling;
+            get { return m_dEuro; }
+            set { m_dEuro = value; }
         }
 
-        public double GetEuro()
+        public double Sterling 
         {
-            return m_dEuro;
+            get { return m_dSterling; }
+            set { m_dSterling = value; }
         }
 
-        public double GetDollar()
+        public double Dollar 
         {
-            return m_dDollar;
+            get { return m_dDollar; }
+            set { m_dDollar = value; }
         }
 
-        public void SetSterling(double dSterling)
-        {
-            m_dSterling = dSterling;
-        }
+        //public double GetSterling()
+        //{
+        //    return m_dSterling;
+        //}
 
-        public void SetEuro(double dEuro)
-        {
-            m_dEuro = dEuro;
-        }
+        //public double GetEuro()
+        //{
+        //    return m_dEuro;
+        //}
 
-        public void SetDollar(double dDollar)
-        {
-            m_dDollar = dDollar;
-        }
+        //public double GetDollar()
+        //{
+        //    return m_dDollar;
+        //}
+
+        //public void SetSterling(double dSterling)
+        //{
+        //    m_dSterling = dSterling;
+        //}
+
+        //public void SetEuro(double dEuro)
+        //{
+        //    m_dEuro = dEuro;
+        //}
+
+        //public void SetDollar(double dDollar)
+        //{
+        //    m_dDollar = dDollar;
+        //}
     }
 }
